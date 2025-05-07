@@ -1,79 +1,74 @@
-.PostShare{
+.PostShare {
     display: flex;
     gap: 1rem;
-    background-color: var(--cardColor);
+    background: #f0f8fb;
     padding: 1rem;
-    border-radius: 1rem;
-}
-
-
-.PostShare>img{
+    border-radius: 0.75rem;
+  }
+  
+  .PostShare > img {
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-}
-.PostShare>div{
+  }
+  
+  .PostShare > div {
     display: flex;
     flex-direction: column;
     width: 90%;
     gap: 1rem;
-}
-
-.PostShare>div>input{
-    background-color: var(--inputColor);
-    border-radius: 10px;
+  }
+  
+  .PostShare > div > input {
+    background: #e6f1f8;
+    border-radius: 0.5rem;
     padding: 10px;
-    font-size: 17px;
+    font-size: 16px;
     border: none;
     outline: none;
-}
-
-
-
-
-
-.postOptions{
+    color: #333;
+  }
+  
+  .postOptions {
     display: flex;
     justify-content: space-around;
-}
-
-.option{
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+  
+  .option {
+    padding: 5px 10px;
+    border-radius: 8px;
     font-size: 12px;
-}
-
-.option:hover{
+    background: #d4eaf7;
+    color: #2c5d75;
     cursor: pointer;
-}
-.ps-button{
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+  
+  .ps-button {
+    padding: 5px 20px;
     font-size: 12px;
-}
-
-
-.previewImage{
+    border: 1px solid #aad4ea;
+    border-radius: 0.3rem;
+    background: #eaf6fb;
+    color: #357ca5;
+    cursor: pointer;
+  }
+  
+  .previewImage {
     position: relative;
-    /* display: flex; */
-}
-
-.previewImage>svg{
+  }
+  
+  .previewImage > svg {
     position: absolute;
     right: 1rem;
     top: 0.5rem;
     cursor: pointer;
-}
-
-.previewImage>img{
+    color: #888;
+  }
+  
+  .previewImage > img {
     width: 100%;
     max-height: 20rem;
     object-fit: cover;
     border-radius: 0.5rem;
-}
+  }
+  

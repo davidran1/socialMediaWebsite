@@ -1,28 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import Home from "../../img/home.png";
-import Noti from "../../img/noti.png";
-import Comment from "../../img/comment.png";
-import { UilSetting } from "@iconscout/react-unicons";
+import {
+  UilHome,
+  UilSetting,
+  UilBell,
+  UilCommentDots
+} from "@iconscout/react-unicons";
 
 const NavIcons = () => {
+  const iconColor = "#2c6e91";
+  const iconSize = 24;
+
   return (
     <div className="navIcons">
       <Link to="/home">
-        <img src={Home} alt="Home" />
+        <UilHome color={iconColor} size={iconSize} />
       </Link>
 
       <Link to="/settings">
-        <UilSetting />
+        <UilSetting color={iconColor} size={iconSize} />
       </Link>
 
       <Link to="/notifications">
-        <img src={Noti} alt="Notifications" />
+        <UilBell color={iconColor} size={iconSize} />
       </Link>
 
       <Link to="/chat">
-        <img src={Comment} alt="Chat" />
+        <UilCommentDots color={iconColor} size={iconSize} />
       </Link>
     </div>
   );
