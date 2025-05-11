@@ -11,3 +11,5 @@ export const findChat = (firstId, secondId) => API.get(`/chat/find/${firstId}/${
 
 export const createChatIfNotExists = (senderId, receiverId) =>
   axios.post("/chat/create", { senderId, receiverId });
+
+export const deleteChat = (chatId) => API.delete(`/chat/${chatId}`);

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./RightSide.css";
 
-import TrendCard from "../TrendCard/TrendCard";
+
+import FunFactCard from "../FunFactCard/FunFactCard";
 import ShareModal from "../ShareModal/ShareModal";
 import NavIcons from "../NavIcons/NavIcons";
+import TimeSpent from "../TimeSpent/TimeSpent";
+import JokeCard from "../Jokes/JokeCard";
 const RightSide = () => {
   const [modalOpened, setModalOpened] = useState(false);
 
@@ -13,7 +16,10 @@ const RightSide = () => {
 
       <NavIcons />
       {/* TrendCard */}
-      <TrendCard />
+  
+      <TimeSpent />
+      <JokeCard />
+      <FunFactCard />
 
       {/* Share buttong */}
       <button className="button r-button" onClick={() => setModalOpened(true)}>
