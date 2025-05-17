@@ -6,10 +6,13 @@ import {
   UilBell,
   UilCommentDots
 } from "@iconscout/react-unicons";
+import { useSelector } from "react-redux";
+
 
 const NavIcons = () => {
   const iconColor = "#2c6e91";
   const iconSize = 24;
+   const { user } = useSelector((state) => state.authReducer.authData);
 
   return (
     <div className="navIcons">
@@ -17,7 +20,7 @@ const NavIcons = () => {
         <UilHome color={iconColor} size={iconSize} />
       </Link>
 
-      <Link to="/settings">
+      <Link to={`/profile/${user._id}`}>
         <UilSetting color={iconColor} size={iconSize} />
       </Link>
 
